@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "hiddenrecipebook",
-  "version": "4.4",
+  "version": "4.5",
 
   "name": "Hidden Recipe Book",
   "description": "Hides the recipe book on crafting and furnace GUIs, toggleable via a hotkey.",
@@ -23,7 +23,7 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17",
-    "collective": ">=7.21"
+    "collective": ">=7.30"
   },
 
   "custom": {

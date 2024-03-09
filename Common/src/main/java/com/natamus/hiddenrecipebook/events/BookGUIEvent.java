@@ -1,6 +1,6 @@
 package com.natamus.hiddenrecipebook.events;
 
-import com.natamus.collective.functions.StringFunctions;
+import com.natamus.collective.functions.MessageFunctions;
 import com.natamus.hiddenrecipebook.config.ConfigHandler;
 import com.natamus.hiddenrecipebook.data.Variables;
 import net.minecraft.ChatFormatting;
@@ -108,7 +108,7 @@ public class BookGUIEvent {
 			}
 
 			if (ConfigHandler.showMessageOnRecipeBookToggle) {
-				StringFunctions.sendMessage(Variables.mc.player, message, ChatFormatting.DARK_GREEN);
+				MessageFunctions.sendMessage(Variables.mc.player, message, ChatFormatting.DARK_GREEN);
 			}
 		}
 	}

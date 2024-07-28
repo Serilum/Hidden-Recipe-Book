@@ -1,6 +1,7 @@
 package com.natamus.hiddenrecipebook;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.hiddenrecipebook.forge.config.IntegrateForgeConfig;
 import com.natamus.hiddenrecipebook.forge.events.ForgeBookGUIEvent;
 import com.natamus.hiddenrecipebook.forge.events.ForgeKeyMappingRegister;
@@ -18,6 +19,10 @@ import net.minecraftforge.fml.loading.FMLEnvironment;
 public class ModForge {
 	
 	public ModForge() {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		if (!FMLEnvironment.dist.equals(Dist.CLIENT)) {
 			return;
 		}

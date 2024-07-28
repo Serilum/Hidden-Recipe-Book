@@ -1,6 +1,7 @@
 package com.natamus.hiddenrecipebook;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.hiddenrecipebook.neoforge.config.IntegrateNeoForgeConfig;
 import com.natamus.hiddenrecipebook.neoforge.events.NeoForgeBookGUIEvent;
 import com.natamus.hiddenrecipebook.neoforge.events.NeoForgeKeyMappingRegister;
@@ -18,6 +19,10 @@ import net.neoforged.neoforge.common.NeoForge;
 public class ModNeoForge {
 	
 	public ModNeoForge(IEventBus modEventBus) {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		if (!FMLEnvironment.dist.equals(Dist.CLIENT)) {
 			return;
 		}

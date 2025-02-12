@@ -4,10 +4,8 @@ import com.natamus.hiddenrecipebook.data.Variables;
 import com.natamus.hiddenrecipebook.events.BookGUIEvent;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.ScreenEvent;
 
-@EventBusSubscriber(Dist.CLIENT)
 public class NeoForgeBookGUIEvent {
 	@SubscribeEvent
 	public static void onGUIScreen(ScreenEvent.Init.Post e) {

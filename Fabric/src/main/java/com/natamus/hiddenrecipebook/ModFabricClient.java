@@ -24,7 +24,7 @@ public class ModFabricClient implements ClientModInitializer {
 	}
 	
 	private void registerEvents() {
-		Variables.hotkey = KeyBindingHelper.registerKeyBinding(new KeyMapping("hiddenrecipebook.key.togglebook", InputConstants.Type.KEYSYM, 258, "key.categories.misc"));
+		ModCommon.registerHotkeys();
 
 		ScreenEvents.AFTER_INIT.register((Minecraft client, Screen screen, int scaledWidth, int scaledHeight) -> {
 			BookGUIEvent.onGUIScreen(client, screen, scaledWidth, scaledHeight);

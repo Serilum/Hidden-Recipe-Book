@@ -4,7 +4,6 @@ import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.hiddenrecipebook.neoforge.config.IntegrateNeoForgeConfig;
 import com.natamus.hiddenrecipebook.neoforge.events.NeoForgeBookGUIEvent;
-import com.natamus.hiddenrecipebook.neoforge.events.NeoForgeKeyMappingRegister;
 import com.natamus.hiddenrecipebook.util.Reference;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -28,7 +27,7 @@ public class ModNeoForge {
 
 
 		modEventBus.addListener(this::loadComplete);
-		modEventBus.register(NeoForgeKeyMappingRegister.class);
+		ModCommon.registerHotkeys();
 
 		setGlobalConstants();
 		ModCommon.init();

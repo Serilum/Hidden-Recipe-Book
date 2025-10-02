@@ -1,15 +1,12 @@
 package com.natamus.hiddenrecipebook;
 
-import com.mojang.blaze3d.platform.InputConstants;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.hiddenrecipebook.data.Variables;
 import com.natamus.hiddenrecipebook.events.BookGUIEvent;
-import net.fabricmc.api.ClientModInitializer;
 import com.natamus.hiddenrecipebook.util.Reference;
-import com.natamus.collective.check.ShouldLoadCheck;
-import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenKeyboardEvents;
-import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 
@@ -24,7 +21,7 @@ public class ModFabricClient implements ClientModInitializer {
 	}
 	
 	private void registerEvents() {
-		Variables.hotkey = KeyBindingHelper.registerKeyBinding(new KeyMapping("hiddenrecipebook.key.togglebook", InputConstants.Type.KEYSYM, 258, "key.categories.misc"));
+		ModCommon.registerHotkeys();
 
 		ScreenEvents.AFTER_INIT.register((Minecraft client, Screen screen, int scaledWidth, int scaledHeight) -> {
 			BookGUIEvent.onGUIScreen(client, screen, scaledWidth, scaledHeight);

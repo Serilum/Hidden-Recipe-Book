@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "hiddenrecipebook",
-  "version": "4.9",
+  "version": "5.0",
 
   "name": "Hidden Recipe Book",
   "description": "Hides the recipe book on crafting and furnace GUIs, toggleable via a hotkey.",
@@ -23,7 +23,7 @@
     "fabric": "*",
     "minecraft": ">=1.21",
     "java": ">=21",
-    "collective": ">=7.91"
+    "collective": ">=8.5"
   },
 
   "custom": {
@@ -45,11 +45,10 @@
 	  " Andrean Olgo",
 	  " aternosorg",
 	  " Cherriesaurus",
-	  " David Sanchez",
-	  " drdog111",
 	  " Michael W. S.",
 	  " t128",
 	  " Tyler Behl",
-	  " XAgent"
+	  " XAgent",
+	  " ตัวตรึง พระนคร"
   ]
 }

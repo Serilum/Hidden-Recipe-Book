@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "hiddenrecipebook",
+  "version": "5.1",
+
+  "name": "Hidden Recipe Book",
+  "description": "Hides the recipe book on crafting and furnace GUIs, toggleable via a hotkey.",
+  "authors": [ "Rick South" ],
+  "contact": {
+    "homepage": "https://serilum.com/mod/hidden-recipe-book",
+    "sources": "https://github.com/Serilum/Hidden-Recipe-Book",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Hidden%20Recipe%20Book"
+  },
+
+  "license": "All Right Reserved",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": { "main": [ "com.natamus.hiddenrecipebook.ModFabric" ], "client": [ "com.natamus.hiddenrecipebook.ModFabricClient" ], "modmenu": [ "com.natamus.hiddenrecipebook.fabric.config.IntegrateModMenu" ] },
+
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "minecraft": ">=26.1",
+    "java": ">=25",
+    "collective": ">=8.16"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Donate <3" : "https://serilum.com/donate"
+      }
+    }
+  },
+
+  "contributors": [
+	  " ",
+	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
+	  " ",
+	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  " ",
+	  "Membership sponsors:",
+	  " akanealw",
+	  " Alister",
+	  " Andrean Olgo",
+	  " aternosorg",
+	  " Cherriesaurus",
+	  " MWS",
+	  " t128",
+	  " Tyler Behl",
+	  " XAgent",
+	  " ตัวตรึง พระนคร"
+  ]
+}

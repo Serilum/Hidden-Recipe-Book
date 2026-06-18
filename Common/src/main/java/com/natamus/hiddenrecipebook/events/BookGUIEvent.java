@@ -74,7 +74,7 @@ public class BookGUIEvent {
 			return;
 		}
 
-		if (Variables.mc.screen instanceof ChatScreen) {
+		if (Variables.mc.gui.screen()instanceof ChatScreen) {
 			return;
 		}
 

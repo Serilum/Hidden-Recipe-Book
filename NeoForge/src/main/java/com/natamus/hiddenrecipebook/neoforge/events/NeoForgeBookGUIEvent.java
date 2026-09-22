@@ -13,7 +13,7 @@ public class NeoForgeBookGUIEvent {
 
 	@SubscribeEvent
 	public static void onKey(ScreenEvent.KeyPressed.Pre e) {
-		if (e.getKeyCode() == Variables.hotkey.getKey().getValue()) {
+		if (e.getKey() == Variables.hotkey.getKey().getValue()) {
 			BookGUIEvent.onHotkeyPress();
 		}
 	}

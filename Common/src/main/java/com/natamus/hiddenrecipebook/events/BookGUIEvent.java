@@ -15,39 +15,39 @@ import java.util.HashMap;
 import java.util.List;
 
 public class BookGUIEvent {
-    private static Date lastpress = null;
-    private static Screen lastScreen = null;
+	private static Date lastpress = null;
+	private static Screen lastScreen = null;
     
 	private static final HashMap<String, ImageButton> recipe_buttons = new HashMap<String, ImageButton>();
 	private static boolean showbook = !ConfigHandler.shouldHideRecipeBook;
 
-    public static void onGUIScreen(Minecraft client, Screen screen, int scaledWidth, int scaledHeight) {
-    	String guiname = screen.getTitle().getString().toLowerCase();
-    	if (guiname.equals("crafting") || guiname.equals("furnace")) {
-    		lastScreen = screen;
+	public static void onGUIScreen(Minecraft client, Screen screen, int scaledWidth, int scaledHeight) {
+		String guiname = screen.getTitle().getString().toLowerCase();
+		if (guiname.equals("crafting") || guiname.equals("furnace")) {
+			lastScreen = screen;
 
-    		@SuppressWarnings("unchecked")
+			@SuppressWarnings("unchecked")
 			List<GuiEventListener> widgets = (List<GuiEventListener>)screen.children();
     		
-    		ImageButton imagebutton = null;
-    		for (GuiEventListener widget : widgets) {
-    			if (widget instanceof ImageButton) {
-    				imagebutton = (ImageButton)widget;
-    				try {
+			ImageButton imagebutton = null;
+			for (GuiEventListener widget : widgets) {
+				if (widget instanceof ImageButton) {
+					imagebutton = (ImageButton)widget;
+					try {
 						int height = imagebutton.getHeight();
 						int width = imagebutton.getWidth();
-    					if (width == 20 && height == 18) {
-    	    				recipe_buttons.put(guiname, imagebutton);
-    	    				break;
-    					}
-    				} catch (Exception ex) {
+						if (width == 20 && height == 18) {
+							recipe_buttons.put(guiname, imagebutton);
+							break;
+						}
+					} catch (Exception ex) {
 						ex.printStackTrace();
 					}
-    			}
-    		}
+				}
+			}
     		
-    		if (showbook) {
-    			if (imagebutton == null) {
+			if (showbook) {
+				if (imagebutton == null) {
 					if (recipe_buttons.containsKey(guiname)) {
 						ImageButton recipe_button = recipe_buttons.get(guiname);
 						if (!widgets.contains(recipe_button)) {
@@ -57,17 +57,17 @@ public class BookGUIEvent {
 						recipe_button.visible = showbook;
 					}
 					return;
-    			}
+				}
     			
-    			imagebutton.visible = showbook;
-    			return;
-    		}
+				imagebutton.visible = showbook;
+				return;
+			}
     		
-    		if (imagebutton != null) {
-    			imagebutton.visible = showbook;
-    		}
-    	}
-    }
+			if (imagebutton != null) {
+				imagebutton.visible = showbook;
+			}
+		}
+	}
 
 	public static void onHotkeyPress() {
 		if (!ConfigHandler.allowRecipeBookToggleHotkey) {

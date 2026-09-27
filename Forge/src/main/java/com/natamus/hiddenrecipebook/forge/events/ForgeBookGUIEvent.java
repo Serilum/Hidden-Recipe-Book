@@ -13,10 +13,10 @@ public class ForgeBookGUIEvent {
 		BusGroup.DEFAULT.register(MethodHandles.lookup(), ForgeBookGUIEvent.class);
 	}
 
-    @SubscribeEvent
-    public static void onGUIScreen(ScreenEvent.Init.Post e) {
+	@SubscribeEvent
+	public static void onGUIScreen(ScreenEvent.Init.Post e) {
 		BookGUIEvent.onGUIScreen(Variables.mc, e.getScreen(), 0, 0);
-    }
+	}
 
 	@SubscribeEvent
 	public static void onKey(ScreenEvent.KeyPressed.Pre e) {

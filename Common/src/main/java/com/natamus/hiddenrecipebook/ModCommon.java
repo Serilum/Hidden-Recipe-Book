@@ -3,6 +3,7 @@ package com.natamus.hiddenrecipebook;
 import com.natamus.collective.services.Services;
 import com.natamus.hiddenrecipebook.config.ConfigHandler;
 import com.natamus.hiddenrecipebook.data.Variables;
+import com.mojang.blaze3d.platform.InputConstants;
 
 public class ModCommon {
 
@@ -16,6 +17,6 @@ public class ModCommon {
 	}
 
 	public static void registerHotkeys() {
-		Variables.hotkey = Services.REGISTERKEYMAPPING.registerKeyMapping("hiddenrecipebook.key.togglebook", 258, "key.categories.misc");
+		Variables.hotkey = Services.REGISTERKEYMAPPING.registerKeyMapping("hiddenrecipebook.key.togglebook", InputConstants.KEY_TAB,"key.categories.misc");
 	}
 }

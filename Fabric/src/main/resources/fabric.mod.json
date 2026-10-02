@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "id": "hiddenrecipebook",
-  "version": "5.2",
+  "version": "5.3",
 
   "name": "Hidden Recipe Book",
   "description": "Hides the recipe book on crafting and furnace GUIs, toggleable via a hotkey.",
-  "authors": [ "Rick South" ],
+  "authors": [ "Serilum" ],
   "contact": {
     "homepage": "https://serilum.com/mod/hidden-recipe-book",
     "sources": "https://github.com/Serilum/Hidden-Recipe-Book",
     "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Hidden%20Recipe%20Book"
   },
 
-  "license": "All Right Reserved",
+  "license": "All Rights Reserved",
   "icon": "icon.png",
 
   "environment": "*",
-  "entrypoints": { "main": [ "com.natamus.hiddenrecipebook.ModFabric" ], "client": [ "com.natamus.hiddenrecipebook.ModFabricClient" ], "modmenu": [ "com.natamus.hiddenrecipebook.fabric.config.IntegrateModMenu" ] },
+  "entrypoints": { "main": [ "com.serilum.hiddenrecipebook.ModFabric" ], "client": [ "com.serilum.hiddenrecipebook.ModFabricClient" ], "modmenu": [ "com.serilum.hiddenrecipebook.fabric.config.IntegrateModMenu" ] },
 
   "depends": {
     "fabricloader": ">=0.15.0",
@@ -29,7 +29,7 @@
   "custom": {
     "modmenu": {
       "links": {
-        "Donate <3" : "https://ricksouth.com/donate"
+        "Donate <3" : "https://serilum.com/donate"
       }
     }
   },
@@ -38,7 +38,7 @@
 	  " ",
 	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
 	  " ",
-	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
 	  " Andrean Olgo",

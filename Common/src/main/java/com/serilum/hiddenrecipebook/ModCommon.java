@@ -1,8 +1,8 @@
-package com.natamus.hiddenrecipebook;
+package com.serilum.hiddenrecipebook;
 
 import com.natamus.collective.services.Services;
-import com.natamus.hiddenrecipebook.config.ConfigHandler;
-import com.natamus.hiddenrecipebook.data.Variables;
+import com.serilum.hiddenrecipebook.config.ConfigHandler;
+import com.serilum.hiddenrecipebook.data.Variables;
 import com.mojang.blaze3d.platform.InputConstants;
 
 public class ModCommon {

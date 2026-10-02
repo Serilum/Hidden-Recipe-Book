@@ -1,8 +1,8 @@
-package com.natamus.hiddenrecipebook.events;
+package com.serilum.hiddenrecipebook.events;
 
 import com.natamus.collective.functions.MessageFunctions;
-import com.natamus.hiddenrecipebook.config.ConfigHandler;
-import com.natamus.hiddenrecipebook.data.Variables;
+import com.serilum.hiddenrecipebook.config.ConfigHandler;
+import com.serilum.hiddenrecipebook.data.Variables;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.ImageButton;

@@ -1,4 +1,4 @@
-package com.natamus.hiddenrecipebook.data;
+package com.serilum.hiddenrecipebook.data;
 
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;

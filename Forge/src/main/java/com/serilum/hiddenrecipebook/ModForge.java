@@ -1,10 +1,10 @@
-package com.natamus.hiddenrecipebook;
+package com.serilum.hiddenrecipebook;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.hiddenrecipebook.forge.config.IntegrateForgeConfig;
-import com.natamus.hiddenrecipebook.forge.events.ForgeBookGUIEvent;
-import com.natamus.hiddenrecipebook.util.Reference;
+import com.serilum.hiddenrecipebook.forge.config.IntegrateForgeConfig;
+import com.serilum.hiddenrecipebook.forge.events.ForgeBookGUIEvent;
+import com.serilum.hiddenrecipebook.util.Reference;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;

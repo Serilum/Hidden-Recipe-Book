@@ -1,7 +1,7 @@
-package com.natamus.hiddenrecipebook.fabric.config;
+package com.serilum.hiddenrecipebook.fabric.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.hiddenrecipebook.util.Reference;
+import com.serilum.hiddenrecipebook.util.Reference;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 

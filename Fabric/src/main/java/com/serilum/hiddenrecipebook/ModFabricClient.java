@@ -1,9 +1,9 @@
-package com.natamus.hiddenrecipebook;
+package com.serilum.hiddenrecipebook;
 
-import com.natamus.hiddenrecipebook.data.Variables;
-import com.natamus.hiddenrecipebook.events.BookGUIEvent;
+import com.serilum.hiddenrecipebook.data.Variables;
+import com.serilum.hiddenrecipebook.events.BookGUIEvent;
 import net.fabricmc.api.ClientModInitializer;
-import com.natamus.hiddenrecipebook.util.Reference;
+import com.serilum.hiddenrecipebook.util.Reference;
 import com.natamus.collective.check.ShouldLoadCheck;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenKeyboardEvents;

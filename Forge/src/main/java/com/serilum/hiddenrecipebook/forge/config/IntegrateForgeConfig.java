@@ -1,7 +1,7 @@
-package com.natamus.hiddenrecipebook.forge.config;
+package com.serilum.hiddenrecipebook.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.hiddenrecipebook.util.Reference;
+import com.serilum.hiddenrecipebook.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

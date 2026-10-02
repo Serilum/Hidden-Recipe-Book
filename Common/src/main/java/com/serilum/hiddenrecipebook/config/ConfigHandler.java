@@ -1,7 +1,7 @@
-package com.natamus.hiddenrecipebook.config;
+package com.serilum.hiddenrecipebook.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.hiddenrecipebook.util.Reference;
+import com.serilum.hiddenrecipebook.util.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;

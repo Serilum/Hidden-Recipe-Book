@@ -1,7 +1,7 @@
-package com.natamus.hiddenrecipebook.forge.events;
+package com.serilum.hiddenrecipebook.forge.events;
 
-import com.natamus.hiddenrecipebook.data.Variables;
-import com.natamus.hiddenrecipebook.events.BookGUIEvent;
+import com.serilum.hiddenrecipebook.data.Variables;
+import com.serilum.hiddenrecipebook.events.BookGUIEvent;
 import net.minecraftforge.client.event.ScreenEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
